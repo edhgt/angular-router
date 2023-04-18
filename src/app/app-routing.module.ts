@@ -7,6 +7,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { MyCartComponent } from './pages/my-cart/my-cart.component';
 import { RecoveryComponent } from './pages/recovery/recovery.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'recovery',
     component: RecoveryComponent,
+  },
+  {
+    path: '**',
+    component: NotFoundComponent,
   }
 ];
 
