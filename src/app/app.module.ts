@@ -6,18 +6,19 @@ import { SwiperModule } from 'swiper/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ImgComponent } from './components/img/img.component';
-import { ProductComponent } from './components/product/product.component';
-import { ProductsComponent } from './components/products/products.component';
-import { NavComponent } from './components/nav/nav.component';
-import { ReversePipe } from './pipes/reverse.pipe';
-import { TimeAgoPipe } from './pipes/time-ago.pipe';
-import { HighlightDirective } from './directives/highlight.directive';
+import { ImgComponent } from './website/components/img/img.component';
+import { ProductComponent } from './website/components/product/product.component';
+import { ProductsComponent } from './website/components/products/products.component';
+import { NavComponent } from './website/components/nav/nav.component';
+import { ReversePipe } from './website/pipes/reverse.pipe';
+import { TimeAgoPipe } from './website/pipes/time-ago.pipe';
+import { HighlightDirective } from './website/directives/highlight.directive';
 import { TimeInterceptor } from './interceptors/time.interceptor';
 import { TokenInterceptor } from './interceptors/token.interceptor';
-import { HomeComponent } from './pages/home/home.component';
-import { CategoryComponent } from './pages/category/category.component';
-import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { HomeComponent } from './website/pages/home/home.component';
+import { CategoryComponent } from './website/pages/category/category.component';
+import { ProductDetailComponent } from './website/pages/product-detail/product-detail.component';
+import { LayoutComponent } from './website/components/layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
     HighlightDirective,
     HomeComponent,
     CategoryComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
